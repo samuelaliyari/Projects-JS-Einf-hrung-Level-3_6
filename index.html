@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Projekt Kreditkarte</title>
+</head>
+<body>
+    <main>
+        <section class="kreditkarte">
+            <article class="logochipContainer">
+                <img src="./assets/img/chip.png" alt="chip">
+                <img src="./assets/img/Visa Payment Card.png" alt="Visa Logo">
+            </article>
+            <h3>#### #### #### ####</h3>
+            <article class="dataContainer">
+                <div>
+                    <h5>Card Holder</h5>
+                    <h4>FULL NAME</h4>
+                </div>
+                <div>
+                    <h5>Expires</h5>
+                    <h4>MM/YY</h4>
+                </div>
+            </article>
+        </section>
+        <section class="formContainer">
+            <form>
+                <label for="">Card Number</label>
+                <input type="number" name="" id="cardNumber" maxlength="16" minlength="16">
+                <label for="">Card Holder</label>
+                <input type="text" name="" id="holderInput">
+                <article>
+                    <div class="dateContainer">
+                        <label for="">Expiration Date</label>
+                        <input type="month" name="" id="dateInput" min="2023-10" max="2033 12" value="2023-10">
+                    </div>
+                    <div class="cvvContainer">
+                        <label for="">CVV</label>
+                        <input type="number" name="" id="cvvInput"  maxlength="3">
+                    </div>
+                </article>
+                <input type="submit" value="Submit" class="submit" onclick="submitKey()">
+            </form>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
